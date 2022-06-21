@@ -34,7 +34,7 @@ namespace PaymentGateway.Data.Entities
         public string? ErrorMessage { get; set; }
         public int MerchantId { get; set; }
         public Merchant Merchant { get; set; }
-        public string BankReferenceId { get; set; }
+        public string? BankReferenceId { get; set; }
 
     }
 

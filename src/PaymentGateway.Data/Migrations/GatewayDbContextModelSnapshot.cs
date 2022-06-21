@@ -60,6 +60,9 @@ namespace PaymentGateway.Data.Migrations
                     b.Property<Guid>("TransactionId")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("MerchantTransactionId")
+                    .ValueGeneratedOnAdd();
+
                     b.Property<decimal>("Amount")
                         .HasColumnType("Money");
 
@@ -93,6 +96,7 @@ namespace PaymentGateway.Data.Migrations
                         new
                         {
                             TransactionId = new Guid("408a2ade-0931-4aa5-9a77-f5dd2eb6ceb7"),
+                            MerchantTransactionId = "bfb4844e-c2cf-4f22-abe8-d05633fd6e2a",
                             Amount = 10.999m,
                             BankReferenceId = "pay_f8c6166f-a50f-447b-b33d-920a6f7bbf37",
                             CardNumber = "123451234456123456",

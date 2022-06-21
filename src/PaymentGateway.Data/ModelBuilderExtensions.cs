@@ -34,6 +34,7 @@ namespace PaymentGateway.Data
                     MerchantId = 1,
                     Status = TransactionStatus.Approved,
                     TransactionId = Guid.NewGuid(),
+                    MerchantTransactionId = Guid.NewGuid().ToString(),
                     BankReferenceId = "pay_f8c6166f-a50f-447b-b33d-920a6f7bbf37"
                 }
             );

@@ -28,6 +28,7 @@ namespace PaymentGateway.Data.Migrations
                 columns: table => new
                 {
                     TransactionId = table.Column<Guid>(nullable: false),
+                    MerchantTransactionId = table.Column<string>(nullable: false),
                     CreatedOn = table.Column<DateTime>(nullable: false),
                     CardNumber = table.Column<string>(nullable: true),
                     ExpiryMonth = table.Column<int>(nullable: false),
@@ -63,8 +64,8 @@ namespace PaymentGateway.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Transactions",
-                columns: new[] { "TransactionId", "Amount", "BankReferenceId", "CardNumber", "CreatedOn", "Currency", "Cvv", "ErrorMessage", "ExpiryMonth", "ExpiryYear", "MerchantId", "Status" },
-                values: new object[] { new Guid("408a2ade-0931-4aa5-9a77-f5dd2eb6ceb7"), 10.999m, "pay_f8c6166f-a50f-447b-b33d-920a6f7bbf37", "123451234456123456", new DateTime(2022, 6, 21, 17, 49, 55, 466, DateTimeKind.Utc).AddTicks(7834), "EUR", "123", null, 12, 2020, 1, 1 });
+                columns: new[] { "TransactionId","MerchantTransactionId", "Amount", "BankReferenceId", "CardNumber", "CreatedOn", "Currency", "Cvv", "ErrorMessage", "ExpiryMonth", "ExpiryYear", "MerchantId", "Status" },
+                values: new object[] { new Guid("408a2ade-0931-4aa5-9a77-f5dd2eb6ceb7"), "bfb4844e-c2cf-4f22-abe8-d05633fd6e2a", 10.999m, "pay_f8c6166f-a50f-447b-b33d-920a6f7bbf37", "123451234456123456", new DateTime(2022, 6, 21, 17, 49, 55, 466, DateTimeKind.Utc).AddTicks(7834), "EUR", "123", null, 12, 2020, 1, 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Merchants_ApiKey",

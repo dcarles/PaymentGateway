@@ -9,6 +9,11 @@ namespace PaymentGateway.Api.Models
     public class PaymentRequest
     {
         /// <summary>
+        /// The transaction Id specified by the client/merchant
+        /// </summary>
+        public string MerchantTransactionId { get; set; }
+
+        /// <summary>
         /// 16 digit card number
         /// </summary>
         public string CardNumber { get; set; }

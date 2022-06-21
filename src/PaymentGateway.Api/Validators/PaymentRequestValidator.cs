@@ -9,6 +9,9 @@ namespace PaymentGateway.Api.Validators
     {
         public PaymentRequestValidator()
         {
+            RuleFor(request => request.MerchantTransactionId).NotNull();
+            RuleFor(request => request.MerchantTransactionId).NotEmpty();
+
             RuleFor(request => request.CardNumber).NotNull();
             RuleFor(request => request.CardNumber).NotEmpty();
           //  RuleFor(request => request.CardNumber).CreditCard().WithMessage("Card number is not in correct format");

@@ -19,6 +19,7 @@ namespace PaymentGateway.Data.Tests
                 .Options;
 
             var transactionId = Guid.NewGuid();
+            var merchantTransactionId = Guid.NewGuid().ToString();
 
             using (var dbContext = new GatewayDbContext(options))
             {
@@ -40,6 +41,7 @@ namespace PaymentGateway.Data.Tests
 
                 var transaction = new Transaction
                 {
+                    MerchantTransactionId = merchantTransactionId,
                     TransactionId = transactionId,
                     ExpiryMonth = 4,
                     ExpiryYear = 2022,
@@ -115,13 +117,14 @@ namespace PaymentGateway.Data.Tests
                 .UseInMemoryDatabase(Guid.NewGuid().ToString())
                 .Options;
             var transactionId = Guid.NewGuid();
-
+            var merchantTransactionId = Guid.NewGuid().ToString();
             using (var dbContext = new GatewayDbContext(options))
             {
                 var transactionRepositoryUnderTest = new Repository<Transaction>(dbContext);
 
                 var transaction = new Transaction
                 {
+                    MerchantTransactionId = merchantTransactionId,
                     TransactionId = transactionId,
                     ExpiryMonth = 4,
                     ExpiryYear = 2022,

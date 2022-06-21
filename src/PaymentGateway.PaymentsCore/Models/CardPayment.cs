@@ -10,9 +10,13 @@ namespace PaymentGateway.PaymentsCore
             TransactionId = Guid.NewGuid();
 
         }
+        /// <summary>
+        /// The transaction Id specified by the client/merchant
+        /// </summary>
+        public string MerchantTransactionId { get; set; }
 
         /// <summary>
-        /// Unique Identifier for the request
+        /// Our Unique Identifier for the request
         /// </summary>
         public Guid TransactionId { get; }
         /// <summary>

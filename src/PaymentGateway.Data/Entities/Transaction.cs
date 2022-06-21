@@ -16,6 +16,7 @@ namespace PaymentGateway.Data.Entities
         [Key]
         public Guid TransactionId { get; set; }
 
+        public string MerchantTransactionId { get; set; }
         /// <summary>
         /// Encrypted card number
         /// </summary>

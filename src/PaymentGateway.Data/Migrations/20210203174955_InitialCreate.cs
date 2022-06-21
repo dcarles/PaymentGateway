@@ -15,7 +15,8 @@ namespace PaymentGateway.Data.Migrations
                     MerchantId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     ApiKey = table.Column<string>(nullable: true),
-                    EmailAddress = table.Column<string>(nullable: true)
+                    EmailAddress = table.Column<string>(nullable: true),
+                    CreatedOn = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -52,18 +53,18 @@ namespace PaymentGateway.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Merchants",
-                columns: new[] { "MerchantId", "ApiKey", "EmailAddress" },
-                values: new object[] { 1, "testMerchant1Key3264", "danielcarles@gmail.com" });
+                columns: new[] { "MerchantId", "ApiKey", "EmailAddress", "CreatedOn", },
+                values: new object[] { 1, "testMerchant1Key3264", "danielcarles@gmail.com", new DateTime(2022, 6, 21, 17, 30, 55, 466, DateTimeKind.Utc).AddTicks(7834) });
 
             migrationBuilder.InsertData(
                 table: "Merchants",
-                columns: new[] { "MerchantId", "ApiKey", "EmailAddress" },
-                values: new object[] { 2, "testMerchant2Key007", "daniel.carles@gmail.com" });
+                columns: new[] { "MerchantId", "ApiKey", "EmailAddress", "CreatedOn", },
+                values: new object[] { 2, "testMerchant2Key007", "daniel.carles@gmail.com", new DateTime(2022, 6, 21, 17, 35, 55, 466, DateTimeKind.Utc).AddTicks(7834) });
 
             migrationBuilder.InsertData(
                 table: "Transactions",
                 columns: new[] { "TransactionId", "Amount", "BankReferenceId", "CardNumber", "CreatedOn", "Currency", "Cvv", "ErrorMessage", "ExpiryMonth", "ExpiryYear", "MerchantId", "Status" },
-                values: new object[] { new Guid("408a2ade-0931-4aa5-9a77-f5dd2eb6ceb7"), 10.999m, "pay_f8c6166f-a50f-447b-b33d-920a6f7bbf37", "123451234456123456", new DateTime(2019, 12, 8, 17, 49, 55, 466, DateTimeKind.Utc).AddTicks(7834), "EUR", "123", null, 12, 2020, 1, 1 });
+                values: new object[] { new Guid("408a2ade-0931-4aa5-9a77-f5dd2eb6ceb7"), 10.999m, "pay_f8c6166f-a50f-447b-b33d-920a6f7bbf37", "123451234456123456", new DateTime(2022, 6, 21, 17, 49, 55, 466, DateTimeKind.Utc).AddTicks(7834), "EUR", "123", null, 12, 2020, 1, 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Merchants_ApiKey",

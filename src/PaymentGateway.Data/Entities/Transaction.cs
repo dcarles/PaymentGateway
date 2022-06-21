@@ -17,10 +17,6 @@ namespace PaymentGateway.Data.Entities
         public Guid TransactionId { get; set; }
 
         /// <summary>
-        /// Utc format
-        /// </summary>
-        public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
-        /// <summary>
         /// Encrypted card number
         /// </summary>
         public string CardNumber { get; set; }

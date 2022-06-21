@@ -28,6 +28,8 @@ namespace PaymentGateway.Data.Migrations
 
                     b.Property<string>("EmailAddress");
 
+                    b.Property<DateTime>("CreatedOn");
+
                     b.HasKey("MerchantId");
 
                     b.HasIndex("ApiKey")
@@ -39,15 +41,17 @@ namespace PaymentGateway.Data.Migrations
                     b.HasData(
                         new
                         {
-                            MerchantId = 1,
+                            MerchantId = 1,                           
                             ApiKey = "testMerchant1Key3264",
-                            EmailAddress = "danielcarles@gmail.com"
+                            EmailAddress = "danielcarles@gmail.com",
+                            CreatedOn = new DateTime(2022, 6, 21, 17, 30, 55, 466, DateTimeKind.Utc).AddTicks(7834)
                         },
                         new
                         {
-                            MerchantId = 2,
+                            MerchantId = 2,                           
                             ApiKey = "testMerchant2Key007",
-                            EmailAddress = "daniel.carles@gmail.com"
+                            EmailAddress = "daniel.carles@gmail.com",
+                            CreatedOn = new DateTime(2022, 6, 21, 17, 35, 55, 466, DateTimeKind.Utc).AddTicks(7834)
                         });
                 });
 
@@ -92,7 +96,7 @@ namespace PaymentGateway.Data.Migrations
                             Amount = 10.999m,
                             BankReferenceId = "pay_f8c6166f-a50f-447b-b33d-920a6f7bbf37",
                             CardNumber = "123451234456123456",
-                            CreatedOn = new DateTime(2019, 12, 8, 17, 49, 55, 466, DateTimeKind.Utc).AddTicks(7834),
+                            CreatedOn = new DateTime(2022, 6, 21, 17, 49, 55, 466, DateTimeKind.Utc).AddTicks(7834),
                             Currency = "EUR",
                             Cvv = "123",
                             ExpiryMonth = 12,

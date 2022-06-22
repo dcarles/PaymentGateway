@@ -9,11 +9,11 @@ services:
     environment:
       - DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*:55000
+      - ASPNETCORE_URLS=http://*:55100
       - "CONFIG_Endpoints:AcquiringBankEndPoint=http://simulator:5007/api"
       - "CONFIG_ConnectionStrings:GatewayDbConnectionString=Server=ms-sql;database=Gateway;uid=sa;pwd=Password123"
     ports:
-      - "55000:55000"
+      - "55100:55100"
     depends_on:
       - ms-sql
       - simulator

@@ -29,5 +29,5 @@ RUN apk add --no-cache icu-libs krb5-libs libgcc libintl libssl1.1 libstdc++ zli
 WORKDIR /app
 COPY --from=build /PaymentGateway.Api/out ./
 
-EXPOSE 55000
+EXPOSE 55100
 ENTRYPOINT ["dotnet", "PaymentGateway.Api.dll"]

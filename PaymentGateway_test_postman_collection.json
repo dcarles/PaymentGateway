@@ -34,15 +34,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"card_number\" : \"4234123412341234\",\n\t\"expiry_month\" : 1,\n\t\"expiry_year\" : 2222,\n\t\"cvv\": \"100\",\n\t\"amount\": 12.99,\n\t\"currency\" : \"EUR\"\n}"
+					"raw": "{\n\t\"merchant_transaction_id\" : \"bfb4844e-c2cf-4f22-abe8-d05633fd6e2a\",\n\t\"card_number\" : \"4234123412341234\",\n\t\"expiry_month\" : 1,\n\t\"expiry_year\" : 2222,\n\t\"cvv\": \"100\",\n\t\"amount\": 12.99,\n\t\"currency\" : \"EUR\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:55000/api/payments",
+					"raw": "http://localhost:55100/api/payments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "55000",
+					"port": "55100",
 					"path": [
 						"api",
 						"payments"
@@ -73,12 +73,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:55000/api/payments/501fe141-e97d-4002-b42f-379e53e6b108",
+					"raw": "http://localhost:55100/api/payments/501fe141-e97d-4002-b42f-379e53e6b108",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "55000",
+					"port": "55100",
 					"path": [
 						"api",
 						"payments",
@@ -116,15 +116,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"card_number\" : \"5353535353535353\",\n\t\"expiry_month\" : 1,\n\t\"expiry_year\" : 2222,\n\t\"cvv\": \"123\",\n\t\"amount\": 12.99,\n\t\"currency\" : \"EUR\"\n}"
+					"raw": "{\n\t\"merchant_transaction_id\" : \"95cb06aa-350b-4dca-b0be-21fbee5a94de\",\n\t\"card_number\" : \"5353535353535353\",\n\t\"expiry_month\" : 1,\n\t\"expiry_year\" : 2222,\n\t\"cvv\": \"123\",\n\t\"amount\": 12.99,\n\t\"currency\" : \"EUR\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:55000/api/payments",
+					"raw": "http://localhost:55100/api/payments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "55000",
+					"port": "55100",
 					"path": [
 						"api",
 						"payments"
@@ -154,12 +154,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:55000/api/payments/6ec67221-2582-41e4-90fe-a2767984aaad",
+					"raw": "http://localhost:55100/api/payments/6ec67221-2582-41e4-90fe-a2767984aaad",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "55000",
+					"port": "55100",
 					"path": [
 						"api",
 						"payments",
@@ -197,15 +197,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"card_number\" : \"345377901232564\",\n\t\"expiry_month\" : 1,\n\t\"expiry_year\" : 2222,\n\t\"cvv\": \"1051\",\n\t\"amount\": 21.99,\n\t\"currency\" : \"GBP\"\n}"
+					"raw": "{\n\t\"merchant_transaction_id\" : \"30aa6a8d-f1ca-4718-acfd-e2d22383da1c\",\n\t\"card_number\" : \"345377901232564\",\n\t\"expiry_month\" : 1,\n\t\"expiry_year\" : 2222,\n\t\"cvv\": \"1051\",\n\t\"amount\": 21.99,\n\t\"currency\" : \"GBP\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:55000/api/payments",
+					"raw": "http://localhost:55100/api/payments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "55000",
+					"port": "55100",
 					"path": [
 						"api",
 						"payments"
@@ -236,12 +236,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:55000/api/payments/579b844d-59bc-4200-a7da-ac4690283b54",
+					"raw": "http://localhost:55100/api/payments/579b844d-59bc-4200-a7da-ac4690283b54",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "55000",
+					"port": "55100",
 					"path": [
 						"api",
 						"payments",
@@ -279,15 +279,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"card_number\" : \"371449635398431\",\n\t\"expiry_month\" : 1,\n\t\"expiry_year\" : 2222,\n\t\"cvv\": \"2123\",\n\t\"amount\": 451.99,\n\t\"currency\" : \"GBP\"\n}"
+					"raw": "{\n\t\"merchant_transaction_id\" : \"89f26184-e8cd-4fcc-98fe-60c2fa276351\",\n\t\"card_number\" : \"371449635398431\",\n\t\"expiry_month\" : 1,\n\t\"expiry_year\" : 2222,\n\t\"cvv\": \"2123\",\n\t\"amount\": 451.99,\n\t\"currency\" : \"GBP\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:55000/api/payments",
+					"raw": "http://localhost:55100/api/payments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "55000",
+					"port": "55100",
 					"path": [
 						"api",
 						"payments"
@@ -318,12 +318,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:55000/api/payments/db255c35-50ba-4dcb-96df-c03f150feeba",
+					"raw": "http://localhost:55100/api/payments/db255c35-50ba-4dcb-96df-c03f150feeba",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "55000",
+					"port": "55100",
 					"path": [
 						"api",
 						"payments",

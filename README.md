@@ -63,7 +63,7 @@ Use POST http://localhost:55000/api/payments with right api key and following bo
 
 ```json
 {
-    "merchant_transaction_id" : "bfb4844e-c2cf-4f22-abe8-d05633fd6e2a",
+        "merchant_transaction_id" : "bfb4844e-c2cf-4f22-abe8-d05633fd6e2a",
 	"card_number" : "4234123412341234",
 	"expiry_month" : 1,
 	"expiry_year" : 2222,

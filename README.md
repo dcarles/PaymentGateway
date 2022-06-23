@@ -59,7 +59,7 @@ For a valid request, api key must be passed in **MerchantApiKey** request header
 | 2      | testMerchant2Key007      |  daniel.carles@gmail.com |
 
 
-Use POST http://localhost:55000/api/payments with right api key and following body (updating values as needed) to request a payment:
+Use POST http://localhost:55100/api/payments with right api key and following body (updating values as needed) to request a payment:
 
 ```json
 {

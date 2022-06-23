@@ -73,9 +73,9 @@ Use POST http://localhost:55000/api/payments with right api key and following bo
 }
 ```
 
-Use GET http://localhost:55000/api/payments/{gateway_reference_id} where gateway_reference_id is the response from payment request, to get payment details.
+Use GET http://localhost:55100/api/payments/{gateway_reference_id} where gateway_reference_id is the response from payment request, to get payment details.
 
-I have added a Postman Collection export file in the main solution, which has set of requests for Merchant 1 and Merchant 2 for your convenience. You can import this file to your Postman environment and use the pre-defined requests to test.  Please feel free to use all those scenarios or create your own ones.
+I have added a Postman Collection file in the root of the project, which has a set of requests for Merchant 1 and Merchant 2 for your convenience. You can import this file to your Postman environment and use the pre-defined requests to test.  Please feel free to use all those scenarios or create your own ones.
 
 
 ### Architecture Overview
